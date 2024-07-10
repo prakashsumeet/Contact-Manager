@@ -1,0 +1,196 @@
+body {
+	background: #e2e2e2;
+}
+
+.bg-primary {
+	background: #009688 ! important;
+}
+
+.banner {
+	width: 100%;
+	height: 92vh;
+	background-color: black;
+	color: white;
+	/*background-image: url("/img/banner.jpg");*/
+	background-size: cover;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, .7)), url("/img/banner.jpg");
+}
+
+.my-card {
+	padding: 20px;
+	background-color: white;
+	border-radius: 1.1rem;
+}
+
+body {
+
+	background: rgba(0, 0, 0, 0.76);
+}
+
+a {
+	text-decoration: none !important;
+}
+
+h1,
+h2,
+h3 {
+	font-family: 'Kaushan Script', cursive;
+}
+
+.myform {
+	position: relative;
+	display: -ms-flexbox;
+	display: flex;
+	padding: 1rem;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	width: 100%;
+	pointer-events: auto;
+	background-color: #fff;
+	background-clip: padding-box;
+	border: 1px solid rgba(0, 0, 0, .2);
+	border-radius: 1.1rem;
+	outline: 0;
+	max-width: 500px;
+}
+
+.tx-tfm {
+	text-transform: uppercase;
+}
+
+.mybtn {
+	border-radius: 50px;
+}
+
+.login-or {
+	position: relative;
+	color: #aaa;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.span-or {
+	display: block;
+	position: absolute;
+	left: 50%;
+	top: -2px;
+	margin-left: -25px;
+	background-color: #fff;
+	width: 50px;
+	text-align: center;
+}
+
+.hr-or {
+	height: 1px;
+	margin-top: 0px !important;
+	margin-bottom: 0px !important;
+}
+
+.google {
+	color: #666;
+	width: 100%;
+	height: 40px;
+	text-align: center;
+	outline: none;
+	border: 1px solid lightgrey;
+}
+
+form .error {
+	color: #ff0000;
+}
+
+#second {
+	display: none;
+}
+
+.sidebar {
+
+	width: 18%;
+	background: white;
+	height: 100%;
+	position: fixed;
+	padding-top: 65px;
+}
+
+.sidebar a {
+	display: block;
+	width: 100%;
+	padding: 25px;
+	text-decoration: none;
+	color: gray;
+}
+
+.sidebar a:hover {
+	background:#e2e2e2;
+	
+}
+
+@media only screen and(max-width:600px) {
+	.sidebar {
+		display: none;
+		width: 80% ! important;
+		background: white;
+		height: 100vh;
+		position: fixed;
+		padding-top: 20px;
+	}
+
+	.content {
+		margin-left: 0% ! important;
+	}
+}
+
+.sidebar .crossBtn {
+	position: absolute;
+	top: 0%;
+	right: 35px;
+	font-size: 36px;
+	cursor: pointer;
+}
+
+.content {
+	margin-left: 20%;
+}
+
+.my_profile_picture
+{
+	width: 30px;
+	height: 30px;
+	object-fit: cover;
+	border-radius: 50%;
+}
+
+.description
+{
+	text-align: center;
+}
+
+.search-result
+{
+	position: absolute;
+	background: white;
+	width: 100%;
+	padding: 10px;
+	border: 1px solid gray;
+	display: none;
+}
+
+.search-container
+{
+	position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

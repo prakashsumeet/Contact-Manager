@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.thymeleaf.org" th:replace="normal/base::layout(~{::section})">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+</head>
+
+<body>
+	<section style="color: black;">
+		<div class="card mr-3">
+			<div class="card-body">
+				<h1 class="text-center">Your Contacts</h1>
+
+				<!--search start-->
+				<div class="search-container my-4">
+					<input onkeyup=" search() " type="text" class="form-control" id="search-input" aria-describedby="emailHelp"
+						placeholder="Search here...">
+
+					<div class="search-result">
+						<!--result goes here-->
+
+					</div>
+				</div>
+				<!--search end-->
+
+				<table class="table table-hover mt-4">
+					<thead>
+						<tr>
+							<th scope="col">#Contact Id</th>
+							<th scope="col">Name</th>
+							<th scope="col">Email</th>
+							<th scope="col">Phone</th>
+							<th scope="col">Action</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr th:each="c:${contacts}">
+							<th scope="row" th:text="${'SCM_USER'+c.cId}">1</th>
+							<td>
+								<img class="my_profile_picture" th:src="@{'/img/'+${c.image}}" alt="" />
+								<a th:href="@{'/user/contact/'+${c.cId}}"><span th:text="${c.name}"></span></a>
+							</td>
+							<td th:text="${c.email}">Otto</td>
+							<td th:text="${c.phone}">@mdo</td>
+							<td>
+
+								<form th:action="@{'/user/update-contact/'+${c.cId}}" method="post">
+									<button class="btn bg-primary mybtn text-white" type="submit"><i
+											class="fa-solid fa-pen-clip"></i></button>
+								</form>
+								<a th:onclick="|deleteContact(${c.cId})|" class="btn btn-outline-danger mybtn mt-2"><i
+										class="fa-sharp fa-solid fa-trash"></i></a>
+
+							</td>
+						</tr>
+
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</section>
+</body>
+
+</html>
